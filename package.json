@@ -2,7 +2,7 @@
   "name": "jinx",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Server.js",
   "scripts": {
     "start": "node Server.js"
   },
