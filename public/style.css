@@ -1,6 +1,6 @@
 
 h1{
-    font-family: 'Montserrat', 'Sans Serif';
+    font-family: 'Lucida Handwriting', 'cursive';
     margin-top: 8rem;
     padding-bottom: 0;
     font-size: 8rem;
@@ -41,8 +41,7 @@ body{
     
     margin: 1rem;
     padding: 1rem;
-    animation-name: wipe-enter;
-    animation-duration: 1s;
+    
     /* animation-iteration-count: infinite; */
 }
 /* } */
