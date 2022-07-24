@@ -17,14 +17,14 @@
         <input class="search-box" type="text" name="question" id="question" placeholder="Search Anything">
         <input class="submit" type="submit" value="Go!">
     </form>
-    <div class="error hide">
-        <div class="tenor-gif-embed centre" data-postid="16558003" data-share-method="host" data-aspect-ratio="1.77778" data-width="60%"><a href="https://tenor.com/view/we-dont-do-that-here-black-panther-tchalla-bruce-gif-16558003">We Dont Do That Here Black Panther GIF</a>from <a href="https://tenor.com/search/we+dont+do+that+here-gifs">We Dont Do That Here GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-        <h2 class="error_text"></h2>
-    </div>
+    
     <div class="loading"></div>
     
     <div class="main">
-        <div class="searchedFor"></div>
+        <div class="searchedFor">
+            
+        </div>
+
         <div class="question reveal">
             <div class="title">
     
@@ -144,19 +144,19 @@
             if(typeof data[0].title !== 'undefined') {
                 error_page.classList.add("hide");
                 error_page_text.innerHTML = "";
-                show.innerHTML = `<h2>SHOWING SEARCH RESULTS FOR "${data[5]}"</h2>`;
+                show.innerHTML = `<h2>This is what we found for"${data[5]}"</h2>`;
                 for (let i = 0; i < 5; i++) {
                     questions[i].classList.add("active");
                     body[i].innerHTML = `<h4>${data[i].text}</h4>`;
                     titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
-                    urls[i].innerHTML = `<h6>Go to problem source</h6>`;
+                    urls[i].innerHTML = `<h6>View problem source</h6>`;
                     urls[i]['href'] = `${data[i].url}`;
                 }
                 
             }
             else {
                 error_page.classList.remove("hide");
-                error_page_text.innerHTML = `We racked our brains (read servers!), but seems like there aren't any great matches for <em>"${data[5]}"</em>!<br>Could you rephrase your query?!`;
+                error_page_text.innerHTML = `Oops! sorry we couldn't find anything related to <em>"${data[5]}"</em>!<br>Please try again with another query?!`;
             }
             
         } catch (error) {
