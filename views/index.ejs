@@ -18,7 +18,7 @@
         <input class="submit" type="submit" value="Go!">
     </form>
     <div class="error hide">
-        <div class="tenor-gif-embed centre" data-postid="16558003" data-share-method="host" data-aspect-ratio="1.77778" data-width="60%"><a href="https://tenor.com/view/we-dont-do-that-here-black-panther-tchalla-bruce-gif-16558003">We Dont Do That Here Black Panther GIF</a>from <a href="https://tenor.com/search/we+dont+do+that+here-gifs">We Dont Do That Here GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         <h2 class="error_text"></h2>
     </div>
     <div class="loading"></div>
@@ -147,7 +147,7 @@
             if(typeof data[0].title !== 'undefined') {
                 error_page.classList.add("hide");
                 error_page_text.innerHTML = "";
-                show.innerHTML = `<h2>This is what we found for"${data[5]}"</h2>`;
+                show.innerHTML = `<h2>This is what we found for "${data[5]}"</h2>`;
                 for (let i = 0; i < 5; i++) {
                     questions[i].classList.add("active");
                     body[i].innerHTML = `<h4>${data[i].text}</h4>`;

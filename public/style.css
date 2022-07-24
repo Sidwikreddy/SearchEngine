@@ -38,7 +38,7 @@ body{
 .active{
     text-align: left;
     
-    background-color: #b1eeb8;
+    
     margin: 1rem;
     padding: 1rem;
     animation-name: wipe-enter;
@@ -156,19 +156,21 @@ input{
     margin-top: 10rem;
     color: white;
     width: 100%;
-    background-color: #66BFBF;
+    background-color: #cde1e180;
     height: 4rem;
   }
   .copyright{
     color: #0d0d0d;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+    font-weight: bolder;
   }
   .footer-link{
     color: #0b0c0c;
     margin: 50px 205px 10px;
     position: relative;
     top: 12px;
+    font-weight: bold;
   }
 .main{
     position: sticky;
